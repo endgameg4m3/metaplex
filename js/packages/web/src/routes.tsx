@@ -36,6 +36,14 @@ export function Routes() {
               path="/artworks/:id?"
               component={() => <ArtworksView />}
             />
+            <Route path='/twitter' component={() => { 
+                 window.location.href = 'https://twitter.com/EndgameG4m3'; 
+                 return null;
+            }}/>
+            <Route path='/wp' component={() => { 
+                 window.location.href = 'https://medium.com/@endgameg4m3/endgameg4m3-a3e61480e268'; 
+                 return null;
+            }}/>
             <Route exact path="/art/:id" component={() => <ArtView />} />
             <Route exact path="/artists/:id" component={() => <ArtistView />} />
             <Route exact path="/artists" component={() => <ArtistsView />} />
